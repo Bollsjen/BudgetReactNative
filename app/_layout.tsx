@@ -1,16 +1,14 @@
-import { Stack } from 'expo-router';
-import { initDatabase } from './database/db';
-import { useEffect } from 'react';
+import { Slot } from 'expo-router';
+import { Stack } from 'expo-router/stack';
 import "../global.css"
 
 export default function RootLayout() {
-  //useEffect(() => {
-  //  initDatabase()
-  //}, [])
-
   return (
-    <Stack screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-    </Stack>
-  );
+    <Stack 
+      screenOptions={{ 
+        headerShown: false,
+        animation: 'slide_from_right',
+      }} 
+    />
+  )
 }
