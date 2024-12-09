@@ -64,7 +64,7 @@ export default function HomeScreen() {
             </Text>
             <TouchableOpacity 
               className='flex flex-row justify-center bg-zinc-200 p-2'
-              onPress={() => setOpenDate(true)}  
+              onPress={() => setOpenDate(!openDate)}  
             >
               <Text>{formatDate()}</Text>
             </TouchableOpacity>
@@ -77,6 +77,7 @@ export default function HomeScreen() {
                     setOpenDate(false)
                     if(selectedDate) setDate(selectedDate)
                   }}
+                  display='inline'
                 />     
               )
             }
