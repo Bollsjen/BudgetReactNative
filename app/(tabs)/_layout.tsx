@@ -3,9 +3,11 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import CustomTabBar from '@/components/CustomTabBar';
 import CustomHeader from '@/components/CustomHeader';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function TabsLayout() {
   return (
+    
     <Tabs
       screenOptions={{
         headerShown: false
